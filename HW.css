@@ -1,0 +1,313 @@
+@font-face {
+  font-family: 'Arabic-new';
+  src: url('Rubik.woff2') format('woff2');
+}
+
+
+body { font-family: Arabic-new;
+     background: linear-gradient(90deg, rgb(223, 221, 221) 0%, rgb(164, 164, 164) 100%);
+    margin: 0px;
+}
+
+.navigation{
+    direction: rtl;
+    display: flex;
+    margin:0;
+    padding:0;
+   background: linear-gradient(90deg,rgba(0, 212, 255, 1) 0%, rgba(4, 4, 186, 1) 0%, rgba(0, 0, 69, 1) 100%);
+    padding: 5px;
+    color:white
+}
+#banner {
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+  
+}
+#banner img{
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+.h1 {
+    position: absolute;
+    font-size: 3em;
+    text-align: center;
+    
+
+    
+}
+
+
+a { color: white;
+     text-decoration: none;
+    transition: ease-in 0.5s;
+}
+a:hover{
+    color:  rgb(255, 145, 0);
+}
+
+#h2{
+   
+    font-weight: 600;
+
+}
+#logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+}
+
+#contact-us {
+    direction: rtl;
+    position: fixed;
+    right: 5px;
+    top:40;
+    background-color: rgb(255, 145, 0);
+    border-radius: 30px;
+    width: 220px;
+    padding:10px; padding-right:30px;
+    font-size: 3.2em;
+    font-weight: 900;
+    transition: ease-in 0.25s;
+    z-index: 200;
+    cursor: pointer;
+    
+}
+
+#contact-us:hover {
+ 
+    background-color:  rgb(0, 0, 69);
+}
+
+.works{
+ margin-top: 100px;
+ 
+}
+p {font-size: 2em;
+ color: white;
+ font-weight: 900;}
+
+.sealant{
+ direction: rtl;
+ background: linear-gradient(90deg,rgba(0, 212, 255, 1) 0%, rgba(4, 4, 186, 1) 0%, rgba(0, 0, 69, 1) 100%);
+ display:flex
+}
+
+#seal{
+    position: relative;
+    height: 300px;
+    width:400px;
+    padding-left: 5px;
+    transition: filter ease 0.3;
+}
+
+.plumbing {
+ display:flex;
+ color: black !important;
+}
+
+#plumb{
+    position: relative;
+    direction: ltr;
+     height: 300px;
+    width:400px;
+    padding-right: 340px;
+   
+}
+    .works img:hover {
+  filter: brightness(0.7) sepia(1) hue-rotate(-20deg) saturate(4);
+  transition: filter 0.3s ease;
+}
+
+.leak-detection {
+    display:flex;
+    direction: rtl;
+    background: linear-gradient(90deg,rgba(0, 212, 255, 1) 0%, rgba(4, 4, 186, 1) 0%, rgba(0, 0, 69, 1) 100%);
+}
+#leak-detect {
+     position: relative;
+    padding-left: 5px;
+    height: 300px;
+    width:400px
+}
+#others { 
+   display: block;
+   margin: 40px auto;
+   text-align: center; 
+   background-color: rgb(255, 145, 0);
+    border-radius: 10px;
+    width: 290px;
+    font-size: 3.6em;
+    font-weight: 900;
+    padding:10px;
+    transition: ease-in 0.25s;
+    z-index: 200;
+    cursor: pointer;
+
+}
+#others:hover{ background-color:  rgb(0, 0, 69);
+
+
+}
+.h3 {
+     border-bottom: solid 3px rgb(0, 0, 69);
+    text-align: center;
+    font-size: 6em;
+    margin-bottom: 35px;
+}
+.past-projects{
+   
+    display: flex;
+  gap: 48px;
+  overflow-x: auto;
+  padding: 10px;
+  scroll-behavior: smooth;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.video{
+    border-radius: 10px;
+    width: 300px;
+    height: 600px;
+}
+
+
+
+.footer{
+    background: linear-gradient(90deg,rgba(0, 212, 255, 1) 0%, rgba(4, 4, 186, 1) 0%, rgba(0, 0, 69, 1) 100%);
+    direction: rtl;
+    font-size: 2em;
+    font-weight: 900;
+    color: white;
+    padding: 5px;
+    padding-top:10px;
+   
+}
+
+
+
+#logos {display: flex;}
+
+#logos img{ filter: invert(70%) sepia(5%) saturate(10%) hue-rotate(100deg) brightness(100%) contrast(119%);}
+#logos img:hover{
+filter: invert(70%) sepia(90%) saturate(1352%) hue-rotate(320deg) brightness(100%) contrast(119%);;}
+
+
+#wainlogo img{
+    width: 30px; 
+  height: auto;
+  margin: 0 10px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+#facelogo img {
+width: 45px; 
+  height: auto;
+  margin: 0 10px;
+  cursor: pointer;
+  
+}
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #banner{
+    width:100%;
+    height: 300px;
+    overflow:hidden;
+  }
+#banner img{ width:100%;
+    height:310px;
+
+}
+  #logo {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+  }
+
+  #h2 {
+    font-size: 1.5em;
+  }
+
+  #contact-us {
+    position: static;
+    margin: 20px auto;
+    font-size: 1.5em;
+    width: 90%;
+    text-align: center;
+  }
+
+  .works {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .sealant, .plumbing, .leak-detection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #seal, #plumb, #leak-detect {
+    width: 90%;
+    height: auto;
+    padding: 0;
+  }
+
+  p {
+    font-size: 1.2em;
+    padding: 0 10px;
+  }
+
+  .h1 {
+    position: static;
+    opacity: 1;
+    font-size: 2em;
+    margin: 10px 0;
+  }
+
+  .h3 {
+    font-size: 2.5em;
+  }
+
+  .past-projects {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .video {
+    width: 90vw;
+    height: auto;
+  }
+
+  .footer {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  #logos {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #wainlogo img, #facelogo img {
+    margin: 10px;
+  }
+
+}
