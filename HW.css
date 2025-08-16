@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Arabic-new';
-  src: url(./Mozilla_Headline,Rubik\Rubik\Rubik-VariableFont_wght.ttf);
+  src: url("./Mozilla_Headline,Rubik\Rubik\Rubik-VariableFont_wght.ttf");
   
 } 
 
@@ -31,15 +31,32 @@ body { font-family: Arabic-new;
   object-fit: cover;
 }
 .h1 {
-    position: absolute;
+  position: absolute;
     font-size: 3em;
     text-align: center;
-    
-
-    
+    display:inline-block; 
 }
 
+.scroll-arrow{
+  display:none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.scroll-arrow img{ 
+  left: 50%;
+  width:70px;
+  height: 70px;
+  filter: invert(70%) sepia(90%) saturate(1200%) hue-rotate(340deg) brightness(100%) contrast(119%);
+transition: ease-in 0.2s;
+margin: 0 auto;
+}
+.scroll-arrow img:hover{
+filter: invert(70%) sepia(90%) saturate(1100%) hue-rotate(340deg) brightness(100%) contrast(119%);}
 
+.scroll-arrow a:hover {
+  color: rgb(255, 145, 0);
+}
 a { color: white;
      text-decoration: none;
     transition: ease-in 0.5s;
@@ -66,7 +83,7 @@ a:hover{
     top:40;
     background-color: rgb(255, 145, 0);
     border-radius: 30px;
-    padding:30px; 
+    padding:20px; 
     font-size: 3.2em;
     font-weight: 900;
     transition: ease-in 0.25s;
@@ -78,6 +95,11 @@ a:hover{
 #contact-us:hover {
  
     background-color:  rgb(0, 0, 69);
+}
+
+#promo{
+  text-align: center;
+  font-size: 2em;
 }
 
 .works{
@@ -95,7 +117,7 @@ p {font-size: 2em;
 }
 
 #seal{
-    position: relative;
+    
     height: 300px;
     width:400px;
     padding-left: 5px;
@@ -108,7 +130,7 @@ p {font-size: 2em;
 }
 
 #plumb{
-    position: relative;
+    
     direction: ltr;
      height: 300px;
     width:400px;
@@ -126,7 +148,6 @@ p {font-size: 2em;
     background: linear-gradient(90deg,rgba(0, 212, 255, 1) 0%, rgba(4, 4, 186, 1) 0%, rgba(0, 0, 69, 1) 100%);
 }
 #leak-detect {
-     position: relative;
     padding-left: 5px;
     height: 300px;
     width:400px
@@ -248,7 +269,9 @@ width: 45px;
     width: 90%;
     text-align: center;
   }
-
+ .scroll-arrow {
+    display: block;
+  }
   .works {
     margin-top: 100px;
     display: flex;
@@ -279,6 +302,8 @@ width: 45px;
     opacity: 1;
     font-size: 2em;
     margin: 10px 0;
+    color: rgb(255, 153, 9);
+    text-shadow: 7px 3px 9px rgba(0,0,0,0.70);
   }
 
   .h3 {
