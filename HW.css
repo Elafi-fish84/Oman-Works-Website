@@ -8,6 +8,7 @@
 body { font-family: Arabic-new;
      background: linear-gradient(90deg, rgb(223, 221, 221) 0%, rgb(164, 164, 164) 100%);
     margin: 0px;
+    font-weight: bold;
 }
 
 .navigation{
@@ -232,6 +233,63 @@ width: 45px;
   
 }
 
+
+
+
+.CTA { position: fixed; flex-wrap: wrap; gap: 20px; top:420px;
+transition: transform 0.3s ease; }
+.CTA img{
+  animation: shake 1s ease-in-out infinite;
+  animation-delay: 5s;
+}
+
+@keyframes shake {
+0% { transform: translateX(0); }
+  10% { transform: translateX(-4px); }
+  20% { transform: translateX(4px); }
+  30% { transform: translateX(-4px); }
+  40% { transform: translateX(4px); }
+  50% { transform: translateX(0); }
+  100% { transform: translateX(0); } 
+}
+
+ #whatsappBtn, #callBtn{ 
+  opacity:0;
+  text-align: center;
+   align-items: center; 
+   justify-content: center; } 
+
+
+ #whatsapp-CTA{ right: 0px; 
+  height: 30px; width: 160px; 
+  display: flex;
+   color: white;
+    font-size: 16px; font-weight: bold;
+     justify-content: center; 
+  background-color: rgb(4, 179, 4); 
+  gap: 10px; text-decoration: none;
+   border-radius: 3px; 
+   transition: transform 0.2s ease; cursor:pointer; }
+
+
+  #call-CTA{ right: 0px; display: flex; height:30px; width: 160px; color: white; 
+    font-size: 20px; font-weight: bold;
+     justify-content: center; background-color: rgb(4, 59, 117); text-decoration: none;
+      border-radius: 3px; transition: transform 0.2s ease; cursor:pointer; }
+
+   #whatsappBackground{width:50%; 
+    text-align: center;
+    border: solid, black, 3px;
+     background-color: rgb(4, 179, 4); border-radius: 20px; }
+
+ #callBackground{ width:50%;
+  text-align: center;
+   border: solid, black, 3px; 
+  background-color: rgb(4, 59, 117); 
+  border-radius: 20px;}
+
+
+
 @media (max-width: 768px) {
 
   body {
@@ -266,7 +324,7 @@ width: 45px;
     position: static;
     margin: 20px auto;
     font-size: 1.5em;
-    width: 90%;
+    width: 80%;
     text-align: center;
   }
  .scroll-arrow {
